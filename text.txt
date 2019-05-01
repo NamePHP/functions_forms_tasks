@@ -1,0 +1,1 @@
+b.title, b.price, group_concat SEPARATOR books_authors ba.book_id authors ba.author_id

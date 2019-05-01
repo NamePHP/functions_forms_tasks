@@ -1,0 +1,7 @@
+Hello word Ola
+SELECT b.id, b.title, b.price, group_concat( a.name ORDER BY a.name SEPARATOR ", " ) FROM 
+
+books b JOIN books_authors ba ON b.id = ba.book_id
+JOIN authors a ON a.id = ba.author_id
+
+GROUP BY b.id
